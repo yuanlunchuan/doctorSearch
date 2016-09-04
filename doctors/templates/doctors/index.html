@@ -1,7 +1,18 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block custom_css %}
+  <link href="{% static 'css/searchDoctor/index.css' %}" rel="stylesheet">
+{% endblock %}
 
 {% block content %}
   <div class="container-fluid">
+    <div id="login-header" class="row">
+      <div class="col-md-3 text-right">
+        <a href="">登录</a>
+        <a href="">注册</a>
+      </div>
+    </div>
     <div class="col-md-3">
       this is col ms -3
     </div>
