@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'searchDoctor.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'searchDoctor',
+        'NAME': 'searchdoctor',
         'USER': 'yuanlunchuan',
         'PASSWORD': '5yuanlunchuan',
     }
