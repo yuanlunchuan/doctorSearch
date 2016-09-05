@@ -14,3 +14,6 @@ class Hospital(models.Model):
 
   def __str__(self):
     return self.name
+
+class Doctor(models.Model):
+  name = models.CharField(max_length=10, verbose_name='姓名')
