@@ -34,3 +34,25 @@ class Doctor(models.Model):
 
   def __str__(self):
     return self.name
+
+class Comment(models.Model):
+  content = models.TextField(verbose_name='评论内容')
+  create_at = models.DateField(auto_now_add=True, verbose_name='评论时间')
+  doctor = models.ForeignKey('Doctor', verbose_name='医生')
+  pid = models.ForeignKey('self', blank=True, null=True, verbose_name='父级评论')
+  praise_count = models.IntegerField(default=0, verbose_name='点赞人数')
+  ATTITUDE_CHOICE = (
+    ('bad', '坏'),
+    ('well', '一般'),
+    ('good', '好'),
+    ('better', '很好'),
+  )
+  attitude = models.CharField(choices=ATTITUDE_CHOICE, default='good', verbose_name='医生态度', max_length=10)
+  duration = models.IntegerField(verbose_name='诊疗时长', default=10)
+
+  class Meta:
+    verbose_name = '评论'
+    verbose_name_plural = verbose_name
+
+  def __str__(self):
+    return self.content
