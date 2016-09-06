@@ -1,3 +1,7 @@
 #login-header{
   background-color: #EBEBEB;
 }
+.container-fluid{
+  background-image: url(../../image/website_bg.jpg);
+  height: 600px;
+}
