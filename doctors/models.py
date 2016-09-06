@@ -17,6 +17,7 @@ class Hospital(models.Model):
 
 class Doctor(models.Model):
   name = models.CharField(max_length=10, verbose_name='姓名')
+  avatar = models.ImageField(upload_to='doctor/%Y/%m', default='avatar/default.png', max_length=200, blank=True, null=True, verbose_name='医生头像')
   DOCTOR_LEVEL = (
     ('level1', '住院医师'),
     ('level2', '主治医师'),
