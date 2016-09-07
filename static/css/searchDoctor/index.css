@@ -4,7 +4,23 @@ body{
 .header{
   color: #fff;
 }
+.full-width{
+  width: 100%;
+}
 .container-fluid{
   background-image: url(../../image/header.jpg);
   height: 400px;
+}
+.m-t{
+  margin-top: 50px;
+}
+.disease-item{
+  width: 100%;
+  padding: 20px 0;
+}
+.m-t-10{
+  margin-top: 10px;
+}
+.m-t-20{
+  margin-top: 20px;
 }
