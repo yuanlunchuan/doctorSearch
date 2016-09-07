@@ -6,14 +6,32 @@
 {% endblock %}
 
 {% block content %}
-  <div class="container-fluid">
-    <div id="login-header" class="row">
-      <div class="col-md-3 text-right">
-        <a href="">登录</a>
-        <a href="">注册</a>
+  <section class="header container-fluid">
+    <header class="row">
+      <div class="col-md-1">
+        <a href="" class="h3"><i class="glyphicon glyphicon-align-justify"></i></a>
+      </div>
+      <div class="col-md-11 text-right">
+        <a href="" class="h3">病人</a>
+        <a href="" class="h3">医师</a>
+        <a href="" class="h3">医院</a>
+      </div>
+    </header>
+    <div class="row">
+      <h2 class="text-center">
+        搜医生
+      </h2>
+      <h1 class="text-center">
+        提供权威，客观的评论信息
+      </h1>
+      <div class="col-md-8 col-md-offset-2">
+        <div class="input-group">
+          <input type="text" class="form-control">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 {% endblock %}
 
 {% block custom_js %}

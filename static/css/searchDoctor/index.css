@@ -1,7 +1,10 @@
-#login-header{
-  background-color: #EBEBEB;
+body{
+  background-color: rgb(216, 235, 240);
+}
+.header{
+  color: #fff;
 }
 .container-fluid{
-  background-image: url(../../image/website_bg.jpg);
-  height: 600px;
+  background-image: url(../../image/header.jpg);
+  height: 400px;
 }
