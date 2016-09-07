@@ -16,6 +16,10 @@ body{
   width: 100%;
   padding: 20px 0;
 }
+.disease-item:hover{
+  background-color: rgb(108, 188, 179);
+  color: #fff;
+}
 .m-t-10{
   margin-top: 10px;
 }
