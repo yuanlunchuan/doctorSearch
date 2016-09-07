@@ -1,15 +1,13 @@
 body{
   background-color: rgb(216, 235, 240);
 }
-.header{
-  color: #fff;
-}
 .full-width{
   width: 100%;
 }
-.container-fluid{
+.header-section{
   background-image: url(../../image/header.jpg);
   height: 400px;
+  color: #fff;
 }
 .m-t{
   margin-top: 50px;
@@ -23,4 +21,7 @@ body{
 }
 .m-t-20{
   margin-top: 20px;
+}
+.nav-item{
+  margin: 0 20px;
 }
