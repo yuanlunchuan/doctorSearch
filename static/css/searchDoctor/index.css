@@ -20,6 +20,23 @@ body{
   background-color: rgb(108, 188, 179);
   color: #fff;
 }
+.explore-item{
+  repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+}
+.baby-item{
+  background-image: url(../../image/baby.png);
+}
+.patient-item{
+  background-image: url(../../image/patient.png);
+}
+.family-item{
+  background-image: url(../../image/family.png);
+}
+.woman-item{
+  background-image: url(../../image/woman.png);
+}
 .m-t-10{
   margin-top: 10px;
 }
