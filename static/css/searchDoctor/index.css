@@ -48,14 +48,25 @@ body{
   margin: 0 20px;
 }
 .specialist{
-    background: rgb(216, 235, 240); /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(rgb(216, 235, 240), white); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgb(216, 235, 240), white); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgb(216, 235, 240), white); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgb(216, 235, 240), white); /* Standard syntax */
+  background: rgb(216, 235, 240); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgb(216, 235, 240), white); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgb(216, 235, 240), white); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgb(216, 235, 240), white); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgb(216, 235, 240), white); /* Standard syntax */
 }
 .cut-line{
   height: 1px;
   border: none;
   border-top: 1px solid #555555;
+}
+.spotlight a{
+  text-decoration: none;
+  color: #000;
+}
+.content-end{
+  background: rgb(216, 235, 240); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(white， rgb(216, 235, 240)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white, rgb(216, 235, 240)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white, rgb(216, 235, 240)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white, rgb(216, 235, 240)); /* Standard syntax */
 }
