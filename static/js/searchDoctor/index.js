@@ -1,7 +1,6 @@
 var searchDoctorObject = {
   onWindowScrolled: function(){
     var self = searchDoctorObject;
-
     var scrollToTopDistance = $(document).scrollTop();
     if(scrollToTopDistance>0&&$('#navbar').is('.hidden')){
       $('#navbar').removeClass('hidden');
