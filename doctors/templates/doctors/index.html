@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block content %}
-  <nav class="navbar navbar-default" role="navigation" style="margin:0;">
+  <nav id="navbar" class="navbar navbar-default navbar-fixed-top navbar hidden" role="navigation">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -31,7 +31,7 @@
     </div>
   </nav>
 
-  <section class="header-section container-fluid">
+  <section id="content" class="header-section container-fluid">
     <header class="row m-t-20">
       <div class="col-md-2">
         <a href="" class="h3">
@@ -237,5 +237,5 @@
 {% endblock %}
 
 {% block custom_js %}
-  <script src="{% static 'js/searchDoctor/index.js' %}" />
+  <script type="text/javascript" src="{% static 'js/searchDoctor/index.js' %}" ></script>
 {% endblock %}

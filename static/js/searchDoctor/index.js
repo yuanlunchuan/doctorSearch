@@ -1,10 +1,22 @@
 var searchDoctorObject = {
+  onWindowScrolled: function(){
+    var self = searchDoctorObject;
+
+    var scrollToTopDistance = $(document).scrollTop();
+    if(scrollToTopDistance>0&&$('#navbar').is('.hidden')){
+      $('#navbar').removeClass('hidden');
+    }
+    if(scrollToTopDistance==0&&!$('#navbar').is('.hidden')){
+      $('#navbar').addClass('hidden');
+    }
+  },
+
   initialize: function(){
-    console.info('--------------line 3');
+    var self = searchDoctorObject;
+    $(window).scroll(self.onWindowScrolled);
   }
 };
 
 $(document).ready(function(){
-  console.info('----------in ready------');
   searchDoctorObject.initialize();
 });
