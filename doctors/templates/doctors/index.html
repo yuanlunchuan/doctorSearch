@@ -355,37 +355,55 @@
       </div>
     </div>
   </section>
-  <section class="container spotlight">
+  <section class="container-fluid spotlight content-end">
     <h1 class="text-center">Healthgrades Spotlight</h1>
     <div class="row m-t-20">
       <div class="col-md-4">
-        <a href="">
-          <h4 class="text-center">Sepsis Awareness Month</h4>
+        <a href="" class="spotlight-item">
+          <h4 class="text-center p-20">Sepsis Awareness Month</h4>
           <div class="text-center">
             <img src="{% static 'image/spotlight1.jpg' %}">
           </div>
+          <h5 class="p-10 text-center">Here's what you need to know about sepsis.</h5>
         </a>
       </div>
       <div class="col-md-4">
-        <a href="">
-          <h4 class="text-center">Patient Advocate Center</h4>
+        <a href="" class="spotlight-item">
+          <h4 class="text-center p-20">Patient Advocate Center</h4>
           <div class="text-center">
             <img src="{% static 'image/spotlight2.jpg' %}">
           </div>
+          <h5 class="p-10 text-center">Be a Savvy Health Consumer</h5>
         </a>
       </div>
       <div class="col-md-4">
-        <a href="">
-          <h4 class="text-center">Industry Insights</h4>
+        <a href="" class="spotlight-item">
+          <h4 class="text-center p-20">Industry Insights</h4>
           <div class="text-center">
             <img src="{% static 'image/spotlight3.jpg' %}">
           </div>
+          <h5 class="p-10 text-center">Innovative strategies from healthcare visionaries</h5>
         </a>
       </div>
     </div>
   </section>
-  <div class="container-fluid content-end" style="height: 50px;">
-  </div>
+  <section class="container-fluid percent-section">
+    <div class="row">
+      <div class="col-md-6 text-right">
+        <span class="h1">30%</span>
+      </div>
+      <div class="col-md-6 text-left">
+        <span class="h3">of people making an<br> appointment this year will visit<br> Healthgrades.</span>
+      </div>
+    </div>
+    <div class="row m-t-10">
+      <div class="col-md-8 col-md-offset-2">
+        <p style="text-indent:2em;">With more than 30 million people a month visiting, that amounts to a lot of opportunity to connect you to the right patients. At Healthgrades, we transform healthcare data into transparent information about physicians and hospitals so that consumers can make more informed decisions. Not only do we redefine how consumers research, compare and connect with physicians and hospitals, but we also help transform the way hospitals reach, engage and communicate with consumers and physicians. </p>
+      </div>
+    </div>
+    <div class="row man-icon-bar m-t-20">
+    </div>
+  </section>
 {% endblock %}
 
 {% block custom_js %}
