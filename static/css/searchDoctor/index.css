@@ -25,6 +25,8 @@ body{
   color: #fff;
 }
 .explore-item{
+  text-decoration: none;
+  color: #fff;
   repeat: no-repeat;
   background-size: cover;
   height: 250px;
