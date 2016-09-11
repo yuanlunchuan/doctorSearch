@@ -128,3 +128,10 @@ body{
   height: 100px;
   background-repeat: repeat-x;
 }
+.benefit-section{
+  background-color: #fff;
+}
+.benefit-section .content{
+  background-color: rgb(247,247,247);
+  padding: 0 30px;
+}
