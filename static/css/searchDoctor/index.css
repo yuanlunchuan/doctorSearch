@@ -146,6 +146,7 @@ footer{
   height: 100%;
   width: 100%;
   z-index: 1000;
+  color: #fff;
 }
 .float-content{
   background-color: rgba(55,130,145,0.9);
@@ -161,4 +162,20 @@ footer{
 }
 .clear{
   clear: both;
+}
+.input-box{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.input-box input{
+  height: 50px;
+  background-color: #fff;
+}
+.input-box span{
+  height: 50px;
+  line-height: 50px;
+}
+.submit-button{
+  background-color: rgb(223, 144, 122);
+  cursor: pointer;
 }

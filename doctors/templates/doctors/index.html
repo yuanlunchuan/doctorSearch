@@ -6,13 +6,23 @@
 {% endblock %}
 
 {% block content %}
-  <section class="float-layer">
+  <section class="float-layer hidden">
     <div class="float-content">
       <div class="close-icon">
         <span class="h3"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i></span>
       </div>
       <div class="clear"></div>
-      <div class="text-center" style="color: #fff;">登录</div>
+      <div class="text-center h2">账号登录</div>
+      <h5 class="text-center m-t-20">还没有帐号？<a href="" style="color: #fff;">免费注册</a></h5>
+      <div class="m-t-20 input-box">
+        <input type="text" class="form-control" placeholder="请输入邮箱">
+      </div>
+      <div class="m-t-20 input-box">
+        <input type="password" class="form-control" placeholder="请输入密码">
+      </div>
+      <div class="m-t-20 input-box submit-button text-center">
+        <span class="h3">登录</span>
+      </div>
     </div>
   </section>
   <nav id="navbar" class="navbar navbar-default navbar-fixed-top navbar hidden" role="navigation" style="z-index: 100;">
