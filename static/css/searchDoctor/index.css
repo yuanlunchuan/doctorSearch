@@ -159,3 +159,6 @@ footer{
   margin-top: 5%;
   cursor: pointer;
 }
+.clear{
+  clear: both;
+}
