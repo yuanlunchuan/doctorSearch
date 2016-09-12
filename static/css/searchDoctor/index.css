@@ -152,3 +152,9 @@ footer{
   height: 100%;
   width: 25%;
 }
+.close-icon{
+  color: #fff;
+  float: right;
+  margin-right: 5%;
+  margin-top: 5%;
+}

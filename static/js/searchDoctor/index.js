@@ -21,12 +21,16 @@ var searchDoctorObject = {
     var self = searchDoctorObject;
     $('.float-layer').addClass('hidden');
   },
-
+  onClosedIconClicked: function(event){
+    var self = searchDoctorObject;
+    $('.float-layer').addClass('hidden');
+  },
   initialize: function(){
     var self = searchDoctorObject;
     $(window).scroll(self.onWindowScrolled);
     $('.icon-area').on('click', self.onIconAreaClicked);
     $('.float-layer').on('click', self.onFloatLayerClicked);
+    $('.close-icon').on('click', self.onClosedIconClicked);
   }
 };
 

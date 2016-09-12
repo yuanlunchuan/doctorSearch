@@ -6,7 +6,16 @@
 {% endblock %}
 
 {% block content %}
-  <nav id="navbar" class="navbar navbar-default navbar-fixed-top navbar hidden" role="navigation">
+  <section class="float-layer hidden">
+    <div class="float-content">
+      <div class="close-icon">
+        <span class="h3">
+          <i class="glyphicon glyphicon-remove" aria-hidden="true"></i></span>
+      </div>
+      <div class="text-center" style="color: #fff;">登录</div>
+    </div>
+  </section>
+  <nav id="navbar" class="navbar navbar-default navbar-fixed-top navbar hidden" role="navigation" style="z-index: 100;">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -30,11 +39,6 @@
       </div>
     </div>
   </nav>
-  <section class="float-layer hidden">
-    <div class="float-content">
-      这是内容
-    </div>
-  </section>
   <section id="content" class="header-section container-fluid">
     <header class="row m-t-20">
       <div class="col-md-2">
