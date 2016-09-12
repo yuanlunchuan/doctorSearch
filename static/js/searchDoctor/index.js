@@ -9,10 +9,24 @@ var searchDoctorObject = {
       $('#navbar').addClass('hidden');
     }
   },
+  onIconAreaClicked: function(event){
+    var self = searchDoctorObject;
+    if($('.float-layer').is('.hidden')){
+      $('.float-layer').removeClass('hidden');
+    }else{
+      $('.float-layer').addClass('hidden');
+    }
+  },
+  onFloatLayerClicked: function(event){
+    var self = searchDoctorObject;
+    $('.float-layer').addClass('hidden');
+  },
 
   initialize: function(){
     var self = searchDoctorObject;
     $(window).scroll(self.onWindowScrolled);
+    $('.icon-area').on('click', self.onIconAreaClicked);
+    $('.float-layer').on('click', self.onFloatLayerClicked);
   }
 };
 
