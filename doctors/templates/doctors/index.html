@@ -3,6 +3,7 @@
 
 {% block custom_css %}
   <link href="{% static 'css/searchDoctor/index.css' %}" rel="stylesheet">
+  <link href="{% static 'css/animate.css' %}" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
@@ -59,7 +60,7 @@
       </div>
       <div class="col-md-10 text-right">
         <a href="" class="h3 nav-item">病人</a>
-        <a href="" class="h3 nav-item">医师</a>
+        <a href="" class="h3 nav-item">医生</a>
         <a href="" class="h3 nav-item">医院</a>
       </div>
     </header>
@@ -73,7 +74,7 @@
       <div class="col-md-8 col-md-offset-2">
         <div class="input-group">
           <input type="text" class="form-control" placeholder="搜医院 搜医生 搜疾病" style="height: 50px;">
-          <a class="input-group-addon"><i class="glyphicon glyphicon-search"></i></a>
+          <a class="input-group-addon cursor"><i class="glyphicon glyphicon-search"></i></a>
         </div>
       </div>
     </div>
@@ -155,45 +156,47 @@
     </div>
   </section>
   <section class="container">
-    <h2 class="text-center">搜索您所在城市的医院</h2>
-    <h4 class="text-center">我们尽自己最大的努力为您找到最合适的医生，医院。</h4>
+    <h2 class="text-center wow slideInLeft" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="10">搜索您所在城市的医院</h2>
+    <h4 class="text-center">我们尽自己最大的努力为您找到最合适的医生医院。</h4>
     <div class="row m-t-10">
       <a href="">
         <div class="col-md-4 col-md-offset-1">
           <div class="baby-item explore-item text-center">
-            <h3 class="middle-center">Top Monlgomery Counly Pedialricians</h3>
+            <h3 class="middle-center">
+              Top Monlgomery Counly Pedialricians
+            </h3>
           </div>
         </div>
       </a>
-      <div class="col-md-6">
-        <a href="">
+      <a href="">
+        <div class="col-md-6">
           <div class="patient-item explore-item text-center">
             <h3 class="middle-center">
               Top Raled Monlgomery Counly Ob/Gyns
             </h3>
           </div>
-        </a>
-      </div>
+        </div>
+      </a>
     </div>
     <div class="row m-t-20">
-      <div class="col-md-6 col-md-offset-1">
-        <a href="">
+      <a href="">
+        <div class="col-md-6 col-md-offset-1">
           <div class="family-item explore-item text-center">
             <h3 class="middle-center">
               The Best Monlgomery Counly Family Doclors
             </h3>
           </div>
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="">
+        </div>
+      </a>
+      <a href="">
+        <div class="col-md-4">
           <div class="woman-item explore-item text-center">
             <h3 class="middle-center">
               Popular Monlgomery Counly Denlisls
             </h3>
           </div>
-        </a>
-      </div>
+        </div>
+      </a>
     </div>
     <div class="row m-t-20">
       <div class="col-md-6 col-md-offset-3 text-center">
@@ -374,7 +377,7 @@
     </div>
   </section>
   <section class="container-fluid spotlight content-end">
-    <h1 class="text-center">搜医生亮点</h1>
+    <h1 class="text-center">搜医生使命</h1>
     <div class="row m-t-20">
       <div class="col-md-4">
         <a href="" class="spotlight-item">
@@ -433,7 +436,7 @@
       <div class="col-md-4">
         <div class="content">
           <h3><small>对于医生</small></h3>
-          <h2>Healthgrades helps hospitals succeed</h2>
+          <h2>提高自己的治病能力</h2>
           <p>We have the solutions, insights and experts to meet your unique growth, engagement and quality challenges. We can measurably improve your hospital’s clinical and financial performance.</p>
           <h4><a href="">Business intelligence</a></h4>
           <h4><a href="">Marketing and communications solutions</a></h4>
@@ -443,7 +446,7 @@
       <div class="col-md-4">
         <div class="content">
           <h3><small>对于医院</small></h3>
-          <h2>Reach the largest audience of patients</h2>
+          <h2>方便医院及时发现问题</h2>
           <p>With targeting based on over 20,000 conditions, physician specialty, demographics or behaviors, your ads on Healthgrades will reach the most relevant patients for your brand.</p>
           <h4><a href="">Advertise with us</a> </h4>
           <h4><a href="">Display specifications</a> </h4>
@@ -460,5 +463,6 @@
 {% endblock %}
 
 {% block custom_js %}
+  <script type="text/javascript" src="{% static 'js/wow.min.js' %}" ></script>
   <script type="text/javascript" src="{% static 'js/searchDoctor/index.js' %}" ></script>
 {% endblock %}

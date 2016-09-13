@@ -31,6 +31,10 @@ var searchDoctorObject = {
   },
   initialize: function(){
     var self = searchDoctorObject;
+    new WOW().init();
+    if($(document).scrollTop()>0){
+      $('#navbar').removeClass('hidden');
+    }
     $(window).scroll(self.onWindowScrolled);
     $('.icon-area').on('click', self.onIconAreaClicked);
     $('.float-layer').on('click', self.onFloatLayerClicked);

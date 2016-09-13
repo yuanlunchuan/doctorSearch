@@ -1,6 +1,9 @@
 body{
   background-color: rgb(255, 255, 255);
 }
+.cursor{
+  cursor: pointer;
+}
 .navbar{
   margin: 0;
   background-color: #fff;
