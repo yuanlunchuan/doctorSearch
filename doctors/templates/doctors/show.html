@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 {% block custom_css %}
-
+  <link href="{% static 'css/searchDoctor/show.css' %}" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
@@ -49,8 +49,20 @@
 
     </div>
   </nav>
-  <div>
-    这是一个医生列表界面
+  <div class="container-fluid doctor-content">
+    <div class="row">
+      <div class="col-md-3" style="background-color: rgb(243, 243, 243)">
+        1234
+      </div>
+      <div class="col-md-9">
+        <h1 class="text-center">在成都市区我们为您找到了<span class="text-danger">1683</span>位医生</h1>
+        <div class="row">
+          <div class="col-md-12 content-title">
+            <span class="h3">医生(1683)</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 {% endblock %}
 

@@ -1,23 +1,14 @@
 body{
   background-color: rgb(255, 255, 255);
 }
-.cursor{
-  cursor: pointer;
-}
 .navbar{
   margin: 0;
   background-color: #fff;
-}
-.full-width{
-  width: 100%;
 }
 .header-section{
   background-image: url(../../image/header.jpg);
   height: 400px;
   color: #fff;
-}
-.m-t{
-  margin-top: 50px;
 }
 .disease-item{
   width: 100%;
@@ -45,21 +36,6 @@ body{
 }
 .woman-item{
   background-image: url(../../image/woman.png);
-}
-.m-t-10{
-  margin-top: 10px;
-}
-.m-t-20{
-  margin-top: 20px;
-}
-.m-b-20{
-  margin-bottom: 20px;
-}
-.p-20{
-  padding: 20px 0;
-}
-.p-10{
-  padding: 10px 0;
 }
 .nav-item{
   margin: 0 20px;
@@ -162,9 +138,6 @@ footer{
   margin-right: 5%;
   margin-top: 5%;
   cursor: pointer;
-}
-.clear{
-  clear: both;
 }
 .input-box{
   margin-left: 5%;
