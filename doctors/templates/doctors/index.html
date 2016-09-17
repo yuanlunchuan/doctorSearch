@@ -2,7 +2,8 @@
 {% load staticfiles %}
 
 {% block custom_css %}
-  <link href="{% static 'css/searchDoctor/show.css' %}" rel="stylesheet">
+  <link href="{% static 'css/searchDoctor/index.css' %}" rel="stylesheet">
+  <link href="{% static 'css/share/star-rating.min.css' %}" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
@@ -51,7 +52,7 @@
   </nav>
   <div class="container-fluid doctor-content">
     <div class="row">
-      <div class="col-md-3" style="background-color: rgb(243, 243, 243)">
+      <div class="col-md-3 doctor-number">
         1234
       </div>
       <div class="col-md-9">
@@ -61,11 +62,35 @@
             <span class="h3">医生(1683)</span>
           </div>
         </div>
+        <div class="row m-t-10">
+          <div class="col-md-2 col-md-offset-10">
+            <select class="form-control">
+              <option>评分最高</option>
+              <option>评论最多</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="{% static 'image/doctors/doctor-default.jpg' %}" class="img-responsive">
+              </div>
+              <div class="col-md-8">
+                <h4 class="no-margin">李波</h4>
+                <h4 class="no-margin"><a href="">耳鼻喉科</a></h4>
+                <h5 class="no-margin">擅长：复杂疑难心律失常的诊疗,包括房性心动过速</h5>
+                <input id="input-21a" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="sm" readonly="true" showCaption="false" showClear="false" >
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 {% endblock %}
 
 {% block custom_js %}
-
+  <script src="{% static 'js/share/star-rating.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/doctors/index.js' %}" type="text/javascript" ></script>
 {% endblock %}

@@ -25,3 +25,9 @@
 .clear{
   clear: both;
 }
+.no-padder{
+  padding: 0;
+}
+.no-margin{
+  margin: 0;
+}
