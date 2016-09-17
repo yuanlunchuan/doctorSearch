@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 {% block custom_css %}
-  <link href="{% static 'css/searchDoctor/index.css' %}" rel="stylesheet">
+  <link href="{% static 'css/searchDoctor/show.css' %}" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
@@ -25,7 +25,7 @@
       </div>
     </div>
   </section>
-  <nav id="navbar" class="navbar navbar-default navbar-fixed-top navbar hidden" role="navigation" style="z-index: 100;">
+  <nav id="navbar" class="navbar navbar-default navbar-fixed-top navbar" role="navigation" style="z-index: 100;">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -40,427 +40,32 @@
         </a>
       </div>
 
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">病人</a></li>
-          <li><a href="#">医生</a></li>
-          <li><a href="#">医院</a></li>
-        </ul>
-      </div>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="搜医院 搜医生 搜疾病">
+          <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span>搜索</span>
+        </div>
+      </form>
+
     </div>
   </nav>
-  <section id="content" class="header-section container-fluid">
-    <header class="row m-t-20">
-      <div class="col-md-2">
-        <a href="javascript:;" class="h3 icon-area">
-          <i class="glyphicon glyphicon-align-justify"></i>
-          <span class="h3" style="color: rgb(236, 139, 63)"><span style="color: rgb(104,189,207)">搜</span>医生</span><sup>&reg;</sup>
-        </a>
-      </div>
-      <div class="col-md-10 text-right">
-        <a href="" class="h3 nav-item">病人</a>
-        <a href="" class="h3 nav-item">医生</a>
-        <a href="" class="h3 nav-item">医院</a>
-      </div>
-    </header>
-    <div class="row m-t">
-      <h2 class="text-center">
-        搜医生<sup>&reg;</sup>
-      </h2>
-      <h1 class="text-center">
-        提供权威，客观的评论信息
-      </h1>
-      <div class="col-md-8 col-md-offset-2">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="搜医院 搜医生 搜疾病" style="height: 50px;">
-          <a class="input-group-addon cursor"><i class="glyphicon glyphicon-search"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="specialist container-fluid">
-    <div class="row m-t-20">
-      <h2 class="text-center">让我们开始选择你期望的医生</h2>
-    </div>
-    <div class="row m-t-20">
-      <div class="col-md-2 col-md-offset-2">
-        <a href="{% url 'doctors_index' %}" class="btn btn-default disease-item">
-          头部疾病
-        </a>
-      </div>
-      <div class="col-md-2">
-        <a href="{% url 'doctors_index' %}" class="btn btn-default disease-item">
-          眼部疾病
-        </a>
-      </div>
-      <div class="col-md-2">
-        <a href="{% url 'doctors_index' %}" class="btn btn-default disease-item">
-          皮肤疾病
-        </a>
-      </div>
-      <div class="col-md-2">
-        <a href="{% url 'doctors_index' %}" class="btn btn-default disease-item">
-          老年疾病
-        </a>
-      </div>
-    </div>
-    <div class="row m-t-20">
-      <div class="col-md-2 col-md-offset-2">
-        <a href="{% url 'doctors_index' %}" class="btn btn-default disease-item">
-          睡眠疾病
-        </a>
-      </div>
-      <div class="col-md-2">
-        <a href="{% url 'doctors_index' %}" class="btn btn-default disease-item">
-          食道疾病
-        </a>
-      </div>
-      <div class="col-md-2">
-        <a href="{% url 'doctors_index' %}" class="btn btn-default disease-item">
-          肿瘤疾病
-        </a>
-      </div>
-      <div class="col-md-2">
-        <a href="{% url 'doctors_index' %}" class="btn btn-default disease-item">
-          心理疾病
-        </a>
-      </div>
-    </div>
-    <div class="row m-t-20">
-      <div class="col-md-2 col-md-offset-2">
-        <a href="{% url 'doctors_index' %}" class="btn btn-default disease-item">
-          乳腺疾病
-        </a>
-      </div>
-      <div class="col-md-2">
-        <a href="{% url 'doctors_index' %}" class="btn btn-default disease-item">
-          胰腺疾病
-        </a>
-      </div>
-      <div class="col-md-2">
-        <a href="{% url 'doctors_index' %}" class="btn btn-default disease-item">
-          胃肠疾病
-        </a>
-      </div>
-      <div class="col-md-2">
-        <a href="{% url 'doctors_index' %}" class="btn btn-default disease-item">
-          更多...
-        </a>
-      </div>
-    </div>
-    <div class="row m-t-20">
-      <div class="col-md-6 col-md-offset-3">
-        <hr style="height:1px;border:none;border-top:1px solid #555555;">
-      </div>
-    </div>
-  </section>
-  <section class="container">
-    <h2 class="text-center wow slideInLeft" data-wow-duration="2s" data-wow-delay="0s" data-wow-offset="10">搜索您所在城市的医院</h2>
-    <h4 class="text-center">我们尽自己最大的努力为您找到最合适的医生医院。</h4>
-    <div class="row m-t-10">
-      <a href="">
-        <div class="col-md-4 col-md-offset-1">
-          <div class="baby-item explore-item text-center">
-            <h3 class="middle-center">
-              Top Monlgomery Counly Pedialricians
-            </h3>
-          </div>
-        </div>
-      </a>
-      <a href="">
-        <div class="col-md-6">
-          <div class="patient-item explore-item text-center">
-            <h3 class="middle-center">
-              Top Raled Monlgomery Counly Ob/Gyns
-            </h3>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="row m-t-20">
-      <a href="">
-        <div class="col-md-6 col-md-offset-1">
-          <div class="family-item explore-item text-center">
-            <h3 class="middle-center">
-              The Best Monlgomery Counly Family Doclors
-            </h3>
-          </div>
-        </div>
-      </a>
-      <a href="">
-        <div class="col-md-4">
-          <div class="woman-item explore-item text-center">
-            <h3 class="middle-center">
-              Popular Monlgomery Counly Denlisls
-            </h3>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="row m-t-20">
-      <div class="col-md-6 col-md-offset-3 text-center">
-        <hr style="height:1px;border:none;border-top:1px solid #555555;">
-      </div>
-    </div>
-  </section>
-  <section class="container">
-    <h1 class="text-center">
-      病友故事
-    </h1>
-    <h5 class="text-center">
-      阅读病友经历，感受他们的乐观
-    </h5>
-    <h5 class="text-center">
-      <a href="">查看更多故事</a>
-    </h5>
+  <div class="container-fluid doctor-content">
     <div class="row">
-      <div class="col-md-2">
-        <div class="story-item" style="background-image: url({% static 'image/story1.jpg' %});">
-          <a href="" class="story-content text-center">
-            <div class="text-content">
-              <h4>Matthew</h4>
-              <h5>Don't Give Up, And Don't Give In</h5>
-            </div>
-          </a>
-        </div>
+      <div class="col-md-3" style="background-color: rgb(243, 243, 243)">
+        1234
       </div>
-      <div class="col-md-2">
-        <div class="story-item" style="background-image: url({% static 'image/story2.jpg' %});">
-          <a href="" class="story-content text-center">
-            <div class="text-content">
-              <h4>Matthew</h4>
-              <h5>Don't Give Up, And Don't Give In</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-2">
-        <div class="story-item" style="background-image: url({% static 'image/story3.jpg' %});">
-          <a href="" class="story-content text-center">
-            <div class="text-content">
-              <h4>Matthew</h4>
-              <h5>Don't Give Up, And Don't Give In</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-2">
-        <div class="story-item" style="background-image: url({% static 'image/story4.jpg' %});">
-          <a href="" class="story-content text-center">
-            <div class="text-content">
-              <h4>Matthew</h4>
-              <h5>Don't Give Up, And Don't Give In</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-2">
-        <div class="story-item" style="background-image: url({% static 'image/story5.jpg' %});">
-          <a href="" class="story-content text-center">
-            <div class="text-content">
-              <h4>Matthew</h4>
-              <h5>Don't Give Up, And Don't Give In</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-2">
-        <div class="story-item" style="background-image: url({% static 'image/story6.png' %});">
-          <a href="" class="story-content text-center">
-            <div class="text-content">
-              <h4>Matthew</h4>
-              <h5>Don't Give Up, And Don't Give In</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-2">
-        <div class="story-item" style="background-image: url({% static 'image/story7.jpg' %});">
-          <a href="" class="story-content text-center">
-            <div class="text-content">
-              <h4>Matthew</h4>
-              <h5>Don't Give Up, And Don't Give In</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-2">
-        <div class="story-item" style="background-image: url({% static 'image/story8.jpg' %});">
-          <a href="" class="story-content text-center">
-            <div class="text-content">
-              <h4>Matthew</h4>
-              <h5>Don't Give Up, And Don't Give In</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-2">
-        <div class="story-item" style="background-image: url({% static 'image/story9.jpg' %});">
-          <a href="" class="story-content text-center">
-            <div class="text-content">
-              <h4>Matthew</h4>
-              <h5>Don't Give Up, And Don't Give In</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-2">
-        <div class="story-item" style="background-image: url({% static 'image/story10.jpg' %});">
-          <a href="" class="story-content text-center">
-            <div class="text-content">
-              <h4>Matthew</h4>
-              <h5>Don't Give Up, And Don't Give In</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-2">
-        <div class="story-item" style="background-image: url({% static 'image/story11.jpg' %});">
-          <a href="" class="story-content text-center">
-            <div class="text-content">
-              <h4>Matthew</h4>
-              <h5>Don't Give Up, And Don't Give In</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-2">
-        <div class="story-item" style="background-image: url({% static 'image/story12.jpg' %});">
-          <a href="" class="story-content text-center">
-            <div class="text-content">
-              <h4>Matthew</h4>
-              <h5>Don't Give Up, And Don't Give In</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-2">
-        <div class="story-item" style="background-image: url({% static 'image/story13.jpg' %});">
-          <a href="" class="story-content text-center">
-            <div class="text-content">
-              <h4>Matthew</h4>
-              <h5>Don't Give Up, And Don't Give In</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-2">
-        <div class="story-item" style="background-image: url({% static 'image/story14.jpg' %});">
-          <a href="" class="story-content text-center">
-            <div class="text-content">
-              <h4>Matthew</h4>
-              <h5>Don't Give Up, And Don't Give In</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-2">
-        <div class="story-item" style="background-image: url({% static 'image/story15.jpg' %});">
-          <a href="" class="story-content text-center">
-            <div class="text-content">
-              <h4>Matthew</h4>
-              <h5>Don't Give Up, And Don't Give In</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="row m-t-20">
-      <div class="col-md-6 col-md-offset-3">
-        <hr class="cut-line">
-      </div>
-    </div>
-  </section>
-  <section class="container-fluid spotlight content-end">
-    <h1 class="text-center">搜医生使命</h1>
-    <div class="row m-t-20">
-      <div class="col-md-4">
-        <a href="" class="spotlight-item">
-          <h4 class="text-center p-20">Sepsis Awareness Month</h4>
-          <div class="text-center">
-            <img src="{% static 'image/spotlight1.jpg' %}">
+      <div class="col-md-9">
+        <h1 class="text-center">在成都市区我们为您找到了<span class="text-danger">1683</span>位医生</h1>
+        <div class="row">
+          <div class="col-md-12 content-title">
+            <span class="h3">医生(1683)</span>
           </div>
-          <h5 class="p-10 text-center">Here's what you need to know about sepsis.</h5>
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="" class="spotlight-item">
-          <h4 class="text-center p-20">Patient Advocate Center</h4>
-          <div class="text-center">
-            <img src="{% static 'image/spotlight2.jpg' %}">
-          </div>
-          <h5 class="p-10 text-center">Be a Savvy Health Consumer</h5>
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="" class="spotlight-item">
-          <h4 class="text-center p-20">Industry Insights</h4>
-          <div class="text-center">
-            <img src="{% static 'image/spotlight3.jpg' %}">
-          </div>
-          <h5 class="p-10 text-center">Innovative strategies from healthcare visionaries</h5>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="container-fluid percent-section">
-    <div class="row text-center">
-      <span class="h1" style="margin-right: 10px;">30%</span>
-      <span class="h3">的人通过搜医生<br> 平台找到合适<br> 的医生</span>
-    </div>
-    <div class="row m-t-10">
-      <div class="col-md-8 col-md-offset-2">
-        <p style="text-indent:2em;">每个月超过三百人访问，这意味着能为你提供更多的评论信息。搜医生平台将医生和医院的信息更加透明化，能为病人提供多信息觉得选择哪一位医生。我们不仅重新定义了病人搜索，比较各个医生和医院，同时也有助于改变医院的方式，增加病人和医生的交流和沟通。. </p>
-      </div>
-    </div>
-    <div class="row man-icon-bar m-t-20">
-    </div>
-    <div class="row benefit-section">
-      <div class="col-md-4">
-        <div class="content">
-          <h3><small>对于病人</small></h3>
-          <h2>寻找最合适的医疗条件</h2>
-          <p>
-            Update your profile and ensure that your profile is accurate, comprehensive, differentiated from others in your speciality, and connect with patients who can benefit most from your care.
-          </p>
-          <h4><a href="">了解更多</a></h4>
-          <h4><a href="">Claim your free profile</a></h4>
-          <h4>&nbsp;</h4>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="content">
-          <h3><small>对于医生</small></h3>
-          <h2>提高自己的治病能力</h2>
-          <p>We have the solutions, insights and experts to meet your unique growth, engagement and quality challenges. We can measurably improve your hospital’s clinical and financial performance.</p>
-          <h4><a href="">Business intelligence</a></h4>
-          <h4><a href="">Marketing and communications solutions</a></h4>
-          <h4><a href="">Digital marketing services</a></h4>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="content">
-          <h3><small>对于医院</small></h3>
-          <h2>方便医院及时发现问题</h2>
-          <p>With targeting based on over 20,000 conditions, physician specialty, demographics or behaviors, your ads on Healthgrades will reach the most relevant patients for your brand.</p>
-          <h4><a href="">Advertise with us</a> </h4>
-          <h4><a href="">Display specifications</a> </h4>
-          <h4><a href="">Contact us</a> </h4>
         </div>
       </div>
     </div>
-  </section>
-  <footer class="container-fluid">
-    <div class="row text-center">
-      <span class="h5">Third Party materials included herein protected under copyright law.</span>
-    </div>
-  </footer>
+  </div>
 {% endblock %}
 
 {% block custom_js %}
-  <script type="text/javascript" src="{% static 'js/searchDoctor/index.js' %}" ></script>
+
 {% endblock %}
