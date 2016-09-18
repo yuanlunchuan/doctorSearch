@@ -1,6 +1,9 @@
 var doctorIndex = {
   initialize: function(){
-    $("#input-id").rating();
+    $("#input-21a").rating({
+      showClear: true,
+      displayOnly: false
+    });
   }
 };
 
