@@ -1,6 +1,6 @@
 var doctorIndex = {
   initialize: function(){
-    $('#star').raty();
+    $('.star').raty();
   }
 };
 
