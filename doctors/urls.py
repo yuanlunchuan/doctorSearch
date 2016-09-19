@@ -3,5 +3,5 @@ from doctors import views, doctors
 
 urlpatterns = [
     url(r'^', doctors.index, name='doctors_index'),
-    url(r'^show$', doctors.show, name='doctor_show'),
+    url(r'^(?P<doctor_id>[0-9]+)/$', doctors.show, name='doctors_show'),
 ]
