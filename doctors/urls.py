@@ -1,7 +1,7 @@
 from django.conf.urls import url
-from doctors import views, doctors
+from doctors import views
 
 urlpatterns = [
-    url(r'^', doctors.index, name='doctors_index'),
-    url(r'^(?P<doctor_id>[0-9]+)/$', doctors.show, name='doctors_show'),
+    url(r'^$', views.index, name='doctors_index'),
+    url(r'^(?P<doctor_id>[0-9]+)/$', views.show, name='doctors_show'),
 ]
