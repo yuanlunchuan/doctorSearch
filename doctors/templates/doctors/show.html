@@ -8,10 +8,37 @@
 {% block content %}
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-4" style="height: 200px; background-color: #f00">
-
+      <div class="col-md-2 doctor-profile white-color" style="height: 700px;">
+        <div class="row m-t-20">
+          <div class="col-md-6 text-center">
+            <img src="{% static 'image/doctors/doctorlogo.png' %}" class="img-responsive">
+          </div>
+          <div class="col-md-6 white-color" style="margin-top: 5%;">
+            <h4 class="text-left">华西医院</h4>
+          </div>
+        </div>
+        <div class="row m-t-20">
+          <div class="col-md-8 col-md-offset-2">
+            <img src="{% static 'image/doctors/doctor.jpg' %}" class="img-responsive doctor-photo-border">
+          </div>
+        </div>
+        <h1 class="text-center">张波</h1>
+        <div class="row">
+          <div class="col-md-12 m-t-20">
+            <span class="glyphicon glyphicon-user"></span>
+            <span>主任医师 教授</span>
+          </div>
+          <div class="col-md-12 m-t-10">
+            <span class="glyphicon glyphicon-map-marker"></span>
+            <span>小儿科</span>
+          </div>
+          <div class="col-md-12 m-t-10">
+            <span class="glyphicon glyphicon-list-alt"></span>
+            <span>胸型畸形、先天性脑瘤、血管瘤及血管畸形等治疗及研究</span>
+          </div>
+        </div>
       </div>
-      <div class="col-md-8" style="height: 200px; background-color: #0f0">
+      <div class="col-md-10 doctor-content" style="height: 200px;">
 
       </div>
     </div>
