@@ -7,3 +7,9 @@
 .doctor-photo-border{
   border: 2px solid #FFFAFA;
 }
+#calendar td, th{
+  text-align: center;
+}
+#calendar td:hover{
+  background: #ebebeb;
+}
