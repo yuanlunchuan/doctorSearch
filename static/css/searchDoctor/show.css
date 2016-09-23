@@ -13,3 +13,19 @@
 #calendar td:hover{
   background: #ebebeb;
 }
+p{
+  text-indent:2em; padding:0px; margin:0px;
+}
+ul li{
+  list-style-type:none;
+}
+.dot{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background: rgb(0, 161, 58);
+  vertical-align: middle;
+  overflow: hidden;
+}
