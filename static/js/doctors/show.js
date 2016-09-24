@@ -1,6 +1,6 @@
 var doctorShow = {
   initialize: function(){
-    $('.star').raty();
+    $('.star').raty({ score: 3 });
   }
 };
 

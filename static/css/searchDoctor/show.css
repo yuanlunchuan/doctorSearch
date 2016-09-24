@@ -75,3 +75,19 @@ ul li{
 .footer{
   height: 50px;
 }
+.header{
+  background-color: #EBEBEB;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 0 20px;
+}
+.header .float-right{
+  float: right;
+}
+.header .float-left{
+  float: left;
+}
+.commit-button{
+  background-color: rgb(255, 135, 0);
+  color: #fff;
+}
