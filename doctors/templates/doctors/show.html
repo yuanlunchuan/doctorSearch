@@ -8,7 +8,7 @@
 {% block content %}
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-2 doctor-profile white-color" style="height: 900px;">
+      <div class="col-md-2 doctor-profile white-color">
         <div class="row m-t-20">
           <div class="col-md-6 text-center">
             <img src="{% static 'image/doctors/doctorlogo.png' %}" class="img-responsive">
@@ -38,7 +38,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-10 doctor-content" style="height: 200px;">
+      <div class="col-md-offset-2 col-md-10 doctor-content" style="height: 200px;">
         <h2>就诊时间</h2>
         <div class="row">
           <div class="col-md-12">
@@ -208,10 +208,52 @@
             <span>匿名</span>
           </div>
         </div>
+        <div class="row m-t-20">
+         <div class="col-md-12">
+           <div class="panel panel-default">
+             <div class="panel-heading">
+               <h4>请对<span class="red-color">刘亦菲</span>医生发表评论</h4>
+             </div>
+             <div class="panel-body">
+               <div class="row">
+                 <div class="col-md-2">
+                   <span class="red-color">*</span> 医生评论:
+                 </div>
+                 <div class="col-md-10">
+                   <textarea rows="5" class="form-control"></textarea>
+                 </div>
+               </div>
+               <div class="row m-t-10">
+                 <div class="col-md-6">
+                   <span class="red-color">*</span>医生态度：<div class="star" style="display: inline-block;"></div>
+                 </div>
+                 <div class="col-md-6">
+                   <span class="red-color">*</span>诊疗效果：<div class="star" style="display: inline-block;"></div>
+                 </div>
+               </div>
+               <div class="row m-t-10">
+                 <div class="col-md-6">
+                   <span class="red-color">*</span>医院服务：<div class="star" style="display: inline-block;"></div>
+                 </div>
+                 <div class="col-md-6">
+                   <span class="red-color">*</span>候诊时长：<div class="star" style="display: inline-block;"></div>
+                 </div>
+               </div>
+               <div class="text-center m-t-20">
+                 <button class="btn" style="background-color: rgb(255, 135, 0); color: #fff;">提交评论</button>
+               </div>
+             </div>
+           </div>
+         </div>
+        </div>
+        <div class="footer">
+        </div>
       </div>
     </div>
   </div>
 {% endblock %}
 
 {% block custom_js %}
+  <script src="{% static 'js/share/jquery.raty.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/doctors/show.js' %}" type="text/javascript" ></script>
 {% endblock %}

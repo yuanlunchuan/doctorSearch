@@ -1,5 +1,7 @@
 .doctor-profile{
    background-color: rgb(0, 161, 58);
+   height: 900px;
+   position: fixed;
 }
 .doctor-content{
   background-color: #EBEBE;
@@ -66,4 +68,10 @@ ul li{
 }
 .content-item{
   padding: 0 20px;
+}
+.star{
+  margin-left: 20px;
+}
+.footer{
+  height: 50px;
 }
