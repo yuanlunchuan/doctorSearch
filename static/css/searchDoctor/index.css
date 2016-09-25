@@ -17,3 +17,24 @@
   -webkit-border-radius: 5px;   /* Webkit browsers */
   border-radius: 5px;            /* W3C syntax */
 }
+.transparent-border{
+  background:transparent;border:0;
+}
+.doctor-list{
+  border-left: 1px solid #EBEBEB;
+}
+.sex a{
+  padding: 2px 30px;
+  background: rgb(243, 243, 243);
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+}
+.sex a:hover{
+  background: rgb(40, 141, 155);
+  color: #fff;
+}
+.query-button{
+  padding: 5px 30px;
+  background: rgb(236, 139, 63);
+  color: #fff;
+}
