@@ -6,5 +6,6 @@ from django.contrib import admin
 urlpatterns = [
   url(r'^', include('sites.urls')),
   url(r'^admin/', admin.site.urls),
-  url(r'^doctors/', include('doctors.urls'))
+  url(r'^doctors/', include('doctors.urls')),
+  url(r'^blogs/', include('blogs.urls')),
 ]
