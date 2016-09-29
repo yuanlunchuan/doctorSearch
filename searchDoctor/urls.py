@@ -8,4 +8,5 @@ urlpatterns = [
   url(r'^admin/', admin.site.urls),
   url(r'^doctors/', include('doctors.urls')),
   url(r'^blogs/', include('blogs.urls')),
+  url(r'^diseases/', include('diseases.urls')),
 ]

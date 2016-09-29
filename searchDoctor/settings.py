@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'doctors',
     'sites',
     'blogs',
+    'diseases'
 ]
 
 MIDDLEWARE_CLASSES = [
