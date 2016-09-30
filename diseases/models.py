@@ -16,6 +16,7 @@ class DiseaseCategory(models.Model):
 class Disease(models.Model):
   name = models.CharField(max_length=20, verbose_name='疾病名称')
   desc = models.TextField(verbose_name='疾病介绍')
+  category = models.ForeignKey(DiseaseCategory, verbose_name='分类', default="")
 
   class Meta:
     verbose_name = '疾病'
@@ -23,4 +24,3 @@ class Disease(models.Model):
 
   def __str__(self):
     return self.name
-
