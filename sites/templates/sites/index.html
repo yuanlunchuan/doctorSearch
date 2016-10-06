@@ -132,21 +132,13 @@
           乳腺疾病
         </a>
       </div>
-      <div class="col-md-2">
-        <a href="{% url 'doctors_index' %}" class="btn btn-default disease-item">
-          胰腺疾病
-        </a>
-      </div>
-      <div class="col-md-2">
-        <a href="{% url 'doctors_index' %}" class="btn btn-default disease-item">
-          胃肠疾病
-        </a>
-      </div>
-      <div class="col-md-2">
-        <a href="{% url 'doctors_index' %}" class="btn btn-default disease-item">
-          更多...
-        </a>
-      </div>
+      {% for diseases_category in diseases_categories%}
+        <div class="col-md-2">
+          <a href="{% url 'doctors_index' %}" class="btn btn-default disease-item">
+            {{ diseases_category.name }}
+          </a>
+        </div>
+      {% endfor %}
     </div>
     <div class="row m-t-20">
       <div class="col-md-6 col-md-offset-3">
